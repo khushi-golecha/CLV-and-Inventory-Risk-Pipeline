@@ -74,3 +74,8 @@ SELECT
     ) AS rolling_avg_7days
 FROM DailySales
 ORDER BY sale_date;
+
+-- Updating null values
+UPDATE products
+SET product_category_name = 'Unknown'
+WHERE product_category_name IS NULL;
